@@ -1,8 +1,6 @@
 # GuiderQ SC'26 Artifact
 
-Welcome to sc26 paper 515 Aritifact Evaluation! 
-This repository records the latest Chameleon image and the latest launch instructions
-for the GuiderQ artifact.
+Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This README records the latest Chameleon image and the launch instructions for the GuiderQ artifact.
 
 ## Current image information
 
@@ -20,29 +18,39 @@ for the GuiderQ artifact.
 | Checksum (MD5) | `51297f1d0b79200f3a2fe8c191f24659` |
 | Base system | Ubuntu 22.04 CUDA, x86-64 |
 
-The image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal
-instance. An x86 Chameleon node with A100 PCIe or A100 NVLink GPUs may be used.
+This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instance. An x86 Chameleon node with A100 PCIe or A100 NVLink GPUs may be used.
 
 ## Launch
 
-1. Login to Chamelon platform and Open the CHI@UC Chameleon dashboard.
-   a.You could directly use this link to visit the lease page: https://chi.uc.chameleoncloud.org/project/leases/
-   and
-   b.then you could click <img width="1207" height="306" alt="image" src="https://github.com/user-attachments/assets/c5470d33-f7ba-4821-a98b-be277a5d9c8b" /> the host calendar button.
-   c.on the host calendar button, you could click the node type button and choose gpu_a100_pcie. I recommend gpu_a100_pcie here because it is more availiable than the nvlink one. <img width="1071" height="392" alt="image" src="https://github.com/user-attachments/assets/b9819d16-fa7c-4ae5-a683-3a7a95d5d999" /> And you could change the time by 1day/7day/30days to see when there will be avaliable time.
-   <img width="1190" height="588" alt="image" src="https://github.com/user-attachments/assets/39f71682-14e3-419e-b5af-da13e545012f" />
-As the image shows, after choose 30 days, you could see there are some avaliable time in each node. And then you could choose one and click the node name in this page directly to make a lease reversation.Here is a example:
-<img width="959" height="703" alt="image" src="https://github.com/user-attachments/assets/f281cd58-24b3-4be4-8afb-9f9809428d51" />
-<img width="733" height="545" alt="image" src="https://github.com/user-attachments/assets/7934e43a-c2b6-487a-b464-4cc9442dbac1" />
-<img width="731" height="571" alt="image" src="https://github.com/user-attachments/assets/02cc7cd6-6f46-467d-9642-07a738196063" />
-and click create a lease successfully
+1. Log in to the Chameleon platform and open the CHI@UC Chameleon dashboard.
 
-2. Locate the image by its exact name or UUID.
-   Please visit this page for guide.
-   https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
-4. Launch an x86 bare-metal GPU instance with the required key pair and
-   networking configuration.
-5. Connect as user `cc`, then run:
+   a. You can go directly to the leases page: https://chi.uc.chameleoncloud.org/project/leases/
+
+   b. Click the "Host Calendar" (Host calendar) button on the leases page. The calendar allows selecting a node type and viewing available times.
+
+   c. Choose a GPU node type. We recommend `gpu_a100_pcie` because it is generally more available than the NVLink option.
+
+   Example screenshots:
+
+   ![Host calendar screenshot 1](https://github.com/user-attachments/assets/c5470d33-f7ba-4821-a98b-be277a5d9c8b)
+
+   ![Host calendar screenshot 2](https://github.com/user-attachments/assets/39f71682-14e3-419e-b5af-da13e545012f)
+
+   After selecting a time window (e.g., 30 days), choose an available slot and click the node name to create a lease.
+
+   ![Lease selection screenshot 1](https://github.com/user-attachments/assets/f281cd58-24b3-4be4-8afb-9f9809428d51)
+
+   ![Lease selection screenshot 2](https://github.com/user-attachments/assets/7934e43a-c2b6-487a-b464-4cc9442dbac1)
+
+   ![Lease creation screenshot](https://github.com/user-attachments/assets/02cc7cd6-6f46-467d-9642-07a738196063)
+
+2. Locate the image by its exact name or UUID in the Chameleon image list.
+
+   See the Chameleon docs for guidance: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
+
+3. Launch an x86 bare-metal GPU instance with the required key pair and networking configuration.
+
+4. Connect to the instance as user `cc`, then run the following commands:
 
 ```bash
 cd /home/cc/guiderq/latest_ae
@@ -52,11 +60,11 @@ export AE_GPUS="0 1 2 3"
 ./ae.sh check
 ./ae.sh smoke-all
 ```
-This is a quick test to verify that the artifact is functional and usable
-The frozen `quartz-ppo` environment is located at
-`/home/cc/quartz-ae/env`. The standalone artifact, locked checkpoints,
-circuits, scripts, and reference results are located at
-`/home/cc/guiderq/latest_ae`.
+
+These quick tests verify that the artifact is functional and usable.
+
+- The frozen `quartz-ppo` environment is located at `/home/cc/quartz-ae/env`.
+- The standalone artifact, locked checkpoints, circuits, scripts, and reference results are located at `/home/cc/guiderq/latest_ae`.
 
 To preview or run the reduced Artifact-Reproduced experiment:
 
@@ -71,4 +79,4 @@ Progress and generated paper-format outputs can be inspected with:
 ```bash
 ./ae.sh status --run-root results/reproduced
 ./ae.sh summarize --run-root results/reproduced
-``
+```

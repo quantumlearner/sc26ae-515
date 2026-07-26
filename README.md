@@ -1,6 +1,6 @@
 # GuiderQ SC'26 Artifact
 
-Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This README records the latest Chameleon image and the launch instructions for the GuiderQ artifact.
+Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This README documents the latest Chameleon image and the launch instructions for the GuiderQ artifact.
 
 ## Current image information
 
@@ -18,15 +18,15 @@ Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This 
 | Checksum (MD5) | `51297f1d0b79200f3a2fe8c191f24659` |
 | Base system | Ubuntu 22.04 CUDA, x86-64 |
 
-This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instance. An x86 Chameleon node with A100 PCIe or A100 NVLink GPUs may be used.
+This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instance. You may use an x86 Chameleon node with A100 PCIe or A100 NVLink GPUs.
 
 ## Launch
 
-1. Log in to the Chameleon platform and open the CHI@UC Chameleon dashboard.
+1. Log in to Chameleon and open the CHI@UC dashboard.
 
    a. You can go directly to the leases page: https://chi.uc.chameleoncloud.org/project/leases/
 
-   b. Click the "Host Calendar" (Host calendar) button on the leases page. The calendar allows selecting a node type and viewing available times.
+   b. Click the "Host Calendar" button on the leases page. The calendar allows selecting a node type and viewing available times.
 
    c. Choose a GPU node type. We recommend `gpu_a100_pcie` because it is generally more available than the NVLink option.
 
@@ -46,7 +46,7 @@ This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instanc
 
 2. Locate the image by its exact name or UUID in the Chameleon image list.
 
-   See the Chameleon docs for guidance: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
+   See the Chameleon documentation for guidance: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
 
 3. Launch an x86 bare-metal GPU instance with the required key pair and networking configuration.
 
@@ -66,7 +66,7 @@ These quick tests verify that the artifact is functional and usable.
 - The frozen `quartz-ppo` environment is located at `/home/cc/quartz-ae/env`.
 - The standalone artifact, locked checkpoints, circuits, scripts, and reference results are located at `/home/cc/guiderq/latest_ae`.
 
-To preview or run the reduced Artifact-Reproduced experiment:
+To preview or run the reduced artifact reproduction experiment:
 
 ```bash
 ./ae.sh reproduce plan

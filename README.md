@@ -38,19 +38,17 @@ This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instanc
 
    After selecting a time window (e.g., 30 days), choose an available slot and click the node name to create a lease.
 
-   ![Lease selection screenshot 1](https://github.com/user-attachments/assets/f281cd58-24b3-4be4-8afb-9f9809428d51)
-
-   ![Lease selection screenshot 2](https://github.com/user-attachments/assets/7934e43a-c2b6-487a-b464-4cc9442dbac1)
-
-   ![Lease creation screenshot](https://github.com/user-attachments/assets/02cc7cd6-6f46-467d-9642-07a738196063)
+   Please see the guide: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#step-3-reserve-a-node-directly-from-the-calendar
 
 2. Locate the image by its exact name or UUID in the Chameleon image list.
 
    See the Chameleon documentation for guidance: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
+   <img width="353" height="53" alt="image" src="https://github.com/user-attachments/assets/548b20d5-4ece-4934-a4e1-d8daa820839e" />
 
-3. Launch an x86 bare-metal GPU instance with the required key pair and networking configuration.
 
-4. Connect to the instance as user `cc`, then run the following commands:
+4. Launch an x86 bare-metal GPU instance with the required key pair and networking configuration.
+
+5. Connect to the instance as user `cc`, then run the following commands:
 
 ```bash
 cd /home/cc/guiderq/latest_ae

@@ -6,16 +6,18 @@ Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This 
 
 | Field | Value |
 | --- | --- |
-| Image name | `sc26ae-515-latest-ae-20260727` |
-| Image UUID | `13a4c1a4-6d7f-48f0-9e25-e316acbb9db0` |
+| Image name | `sc26ae-515-latest-ae-20260727-v2` |
+| Image UUID | `70fd7289-191e-4853-8835-3b8df92b6523` |
 | Chameleon site | `CHI@UC` |
-| Created | `2026-07-26T16:56:17Z` |
+| Created | `2026-07-27T14:42:06Z` |
+| Updated | `2026-07-27T14:44:08Z` |
 | Status | `active` |
 | Visibility | `shared` |
-| Disk format | QCOW2 with zstd compression |
-| Compressed size | 13,569,766,912 bytes (12.64 GiB) |
-| Virtual size | 31,884,050,432 bytes (29.69 GiB) |
-| Checksum (MD5) | `51297f1d0b79200f3a2fe8c191f24659` |
+| Protected | `True` |
+| Disk format | QCOW2 |
+| Compressed size | 13,570,004,992 bytes (12.64 GiB) |
+| Virtual size | 31,881,953,280 bytes |
+| Checksum | `9b22807fd04f8f8153bb9383f6a644da` |
 | Base system | Ubuntu 22.04 CUDA, x86-64 |
 
 This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instance. You may use an x86 Chameleon node with A100 PCIe or A100 NVLink GPUs.

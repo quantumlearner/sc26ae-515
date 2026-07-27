@@ -45,7 +45,8 @@ This image was validated on a four-GPU NVIDIA A100 80 GB PCIe bare-metal instanc
 2. Locate the image by its exact name or UUID in the Chameleon image list.
 
    See the Chameleon documentation for guidance: https://chameleoncloud.readthedocs.io/en/latest/getting-started/index.html#my-first-instance-launching-an-instance
-   <img width="353" height="53" alt="image" src="https://github.com/user-attachments/assets/548b20d5-4ece-4934-a4e1-d8daa820839e" />
+   <img width="1230" height="469" alt="image" src="https://github.com/user-attachments/assets/c6f2e0ee-2caf-493c-a10a-68da44ee851a" />
+
 
 
 4. Launch an x86 bare-metal GPU instance with the required key pair and networking configuration.

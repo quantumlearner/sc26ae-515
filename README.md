@@ -15,7 +15,7 @@ Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This 
 | Visibility | `shared` |
 | Protected | `True` |
 | Disk format | QCOW2 |
-| Compressed size | 13,570,004,992 bytes (12.64 GiB) |
+| Compressed size | 13,570,004,992 bytes (12.29 GiB) |
 | Virtual size | 31,881,953,280 bytes |
 | Checksum | `9b22807fd04f8f8153bb9383f6a644da` |
 | Base system | Ubuntu 22.04 CUDA, x86-64 |

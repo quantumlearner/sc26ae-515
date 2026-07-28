@@ -7,7 +7,7 @@ Welcome to the GuiderQ SC'26 Artifact Evaluation repository for paper 515. This 
 | Field | Value |
 | --- | --- |
 | Image name | `sc26ae-515-latest-ae-20260728-v3` |
-| Image UUID | `70fd7289-191e-4853-8835-3b8df92b6523` |
+| Image UUID | `aa377dcf-9d95-4a3f-8689-4dc4ffec544a` |
 | Chameleon site | `CHI@UC` |
 | Created | `2026-07-27T14:42:06Z` |
 | Updated | `2026-07-27T14:44:08Z` |

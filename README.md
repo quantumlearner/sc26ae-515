@@ -119,9 +119,9 @@ BUDGET_SEC=60 ./ae.sh smoke-recursive-rl-oac all
 
 This isolates recursive partitioning, leaf-circuit PPO, meld-boundary PPO, recomposition, and output-QASM validation.
 
-### 4. Reproduce Table IV, Figures 5–6, and the long Nam representative — Recommended
+### 4. Reproduce selected Table IV, Figures 5–6, and the long Nam representative — Recommended
 
-Estimated cost: 30.33 aggregate GPU-hours. The ideal four-GPU wall time is 7.58 hours; reserve up to eight hours for launch overhead, validation, and queue imbalance.
+
 
 Start the resumable fixed-seed 28-task sequence in a detached terminal:
 
